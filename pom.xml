@@ -50,6 +50,7 @@
         <mybatis.plugin.version>1.3.5</mybatis.plugin.version>
         <servlet.version>4.0.0-b01</servlet.version>
         <lombok.version>1.16.6</lombok.version>
+        <fileupload.version>1.3.2</fileupload.version>
         <jackson.version>2.8.4</jackson.version>
         <mybatis.plugin.version>1.3.5</mybatis.plugin.version>
     </properties>
@@ -187,6 +188,11 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${fileupload.version}</version>
         </dependency>
     </dependencies>
     <build>
