@@ -11,9 +11,14 @@
 package com.forbetter.controller;
 
 
+import com.forbetter.pojo.Example;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,8 +34,16 @@ public class HomeController
 {
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String index()
+    public String index(Model model)
     {
+        Example example = new Example();
+        List<Example> list = new ArrayList<Example>();
+        list.add(example);
+        example.setName("aaa");
+        example.setDeveloper("lichen");
+        model.addAttribute("title", "首页");
+        model.addAttribute("exampleObject", example);
+        model.addAttribute("systems", list);
         return "index";
     }
 }
