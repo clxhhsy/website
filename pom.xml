@@ -233,7 +233,8 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/website</url>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <url>jdbc:mysql://localhost:3306/website?useUnicode=true&amp;characterEncoding=utf-8</url>
                     <username>root</username>
                     <password>159357</password>
                     <driver>com.mysql.jdbc.Driver</driver>
