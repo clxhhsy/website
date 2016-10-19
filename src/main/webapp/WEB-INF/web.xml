@@ -49,4 +49,13 @@
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>validationCode</servlet-name>
+        <servlet-class>com.forbetter.common.CaptchaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>validationCode</servlet-name>
+        <url-pattern>/validateCode.png</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
