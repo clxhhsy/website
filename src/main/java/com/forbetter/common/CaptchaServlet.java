@@ -106,8 +106,8 @@ public class CaptchaServlet extends HttpServlet
         // 自定义验证码图片背景
         CustomBackgroundFactory backgroundFactory = new CustomBackgroundFactory();
         captchaService.setBackgroundFactory(backgroundFactory);
-        captchaService.setWidth(82);
-        captchaService.setHeight(32);
+        captchaService.setWidth(120);
+        captchaService.setHeight(40);
     }
 
     @Override
