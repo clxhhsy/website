@@ -44,6 +44,6 @@ public class HomeController
         model.addAttribute("title", "首页");
         model.addAttribute("exampleObject", example);
         model.addAttribute("systems", list);
-        return "login";
+        return "index";
     }
 }

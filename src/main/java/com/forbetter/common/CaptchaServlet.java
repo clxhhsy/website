@@ -35,7 +35,7 @@ import java.util.Random;
 
 
 /**
- * 验证码
+ * 验证码生成器
  * <p>
  * Created On 2016年-10月-19日 10:27
  *

@@ -43,9 +43,9 @@
                                 <input type="text" id="patchca" name="patchca" class="form-control" placeholder="验证码">
                             </div>
                             <div class="col-xs-4" >
-                                <img src="validateCode.png" alt="验证码"
+                                <img src="/admin/validateCode.png" alt="验证码"
                                      style="cursor:pointer;vertical-align:text-bottom;"
-                                     onclick="this.src='/validateCode.png?'+Math.random();">
+                                     onclick="this.src='/admin/validateCode.png?'+new Date().getTime();">
                             </div>
                         </div>
                     </div>

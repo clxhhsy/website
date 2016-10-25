@@ -55,7 +55,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>validationCode</servlet-name>
-        <url-pattern>/validateCode.png</url-pattern>
+        <url-pattern>/admin/validateCode.png</url-pattern>
     </servlet-mapping>
     
 </web-app>
