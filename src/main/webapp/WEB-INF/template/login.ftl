@@ -17,33 +17,26 @@
     <link rel="stylesheet" href="/static/css/animate.css">
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body class="gray-bg">
+<body class="blue-bg">
 <div class="middle-box text-center loginscreen  animated fadeInDown">
     <div>
         <div>
-            <h1 class="logo-name">H+</h1>
+            <h3 class="logo-name">
+                <img src="/static/images/logo-white.png">
+            </h3>
         </div>
-        <form class="m-t" role="form" action="">
+        <form class="m-t" role="form" action="" method="post">
             <div class="form-group">
-                <div class="input-group input-group-md">
-                    <span class="input-group-addon">
-                        <i class="fa fa-user fa-lg"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="请输入用户名" required="" autocomplete="off">
-                </div>
+                <input type="text" class="form-control" placeholder="请输入用户名" required="" autocomplete="off">
             </div>
             <div class="form-group">
-                <div class="input-group input-group-md">
-                    <span class="input-group-addon">
-                        <i class="fa fa-lock fa-lg"></i>
-                    </span>
-                    <input type="password" class="form-control" placeholder="请输入密码" required="" autocomplete="off">
-                </div>
+                <input type="password" class="form-control" placeholder="请输入密码" required="" autocomplete="off">
             </div>
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-8 col-sm-8 col-md-8">
-                        <input type="text" id="patchca" name="patchca" class="form-control" placeholder="验证码">
+                        <input type="text" id="patchca" maxlength="4" name="patchca" class="form-control"
+                               placeholder="验证码">
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4">
                         <img src="/admin/validateCode.png" alt="验证码"
