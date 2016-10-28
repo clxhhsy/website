@@ -9,23 +9,24 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <context:component-scan base-package="com.forbetter.controller"/>
     <mvc:annotation-driven/>
-
+    <mvc:resources mapping="/static/**" location="static/"/>
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"
           p:prefix="" p:suffix=".ftl">
         <property name="cache" value="false"/>
-        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
+        <property name="viewClass" value="com.forbetter.extension.BaseFreeMarkerView"/>
         <property name="contentType" value="text/html;charset=UTF-8"/>
         <property name="exposeRequestAttributes" value="true"/>
         <property name="exposeSessionAttributes" value="true"/>
         <property name="exposeSpringMacroHelpers" value="true"/>
-        <property name="requestContextAttribute" value="base"/>
         <property name="order" value="0"/>
     </bean>
     <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
     <bean id="freemarkerConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="location" value="classpath:conf/freemarker.properties"/>
     </bean>
+
+    <import resource="classpath:/kr/pe/kwonnam/freemarker/inheritance/freemarker-layout-directives.xml"/>
 
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/template/"/>
@@ -34,6 +35,7 @@
         <property name="freemarkerVariables">
             <map>
                 <entry key="xmlEscape" value-ref="fmXmlEscape"/>
+                <entry key="layout" value-ref="freemarkerLayoutDirectives"/>
             </map>
         </property>
         <!-- set a freemarker setting -->

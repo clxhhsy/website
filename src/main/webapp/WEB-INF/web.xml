@@ -42,11 +42,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>springmvc</servlet-name>
-        <url-pattern>*.html</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>springmvc</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -57,5 +53,10 @@
         <servlet-name>validationCode</servlet-name>
         <url-pattern>/admin/validateCode.png</url-pattern>
     </servlet-mapping>
+    
+    <error-page>
+        <exception-type>com.forbetter.exception.CustomerException</exception-type>
+        <location>/index.jsp</location>
+    </error-page>
     
 </web-app>

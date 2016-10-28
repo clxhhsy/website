@@ -9,21 +9,21 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#">Home</a>
+                    <a href="#">AAA</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">BBB</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#">CCC</a>
                 </li>
                 <li>
-                    <a href="#">Dropdown</a>
+                    <a href="#">DDD</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a href="#">Default</a>
+                    <a href="#">EEE</a>
                 </li>
             </ul>
         </div>

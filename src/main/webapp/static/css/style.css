@@ -4162,7 +4162,8 @@ table.table-mail tr td {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #1c84c6 url("/static/images/bg.jpg") no-repeat ;
+    background: #1c84c6 url("/static/images/bg.jpg") no-repeat fixed top ;
+    background-size: 100% 100%;
 }
 
 .lazur-bg {
@@ -7902,4 +7903,36 @@ body.skin-3 {
         width: 12.5%;
         font-size: 12px
     }
+}
+
+/* validate style */
+
+input.error{
+    border: 1px solid #E6594E;
+}
+
+input.highlight{
+    border: 1px solid #7abd54;
+}
+
+label.error,label.tip{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 5px;
+    padding-left: 20px;
+    color: red;
+    background: url('error.png') no-repeat left center;
+}
+
+label.tip{
+    color: #aaa;
+    background: url('tip.png') no-repeat left center;
+}
+
+label.valid{
+    background: url('valid.png') no-repeat left center;
+    width: 32px;
 }
