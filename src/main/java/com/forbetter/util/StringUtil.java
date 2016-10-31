@@ -18,5 +18,5 @@ package com.forbetter.util;
  * @author lichen
  * @version 1.0
  */
-public class StringUtil {
-}
+public class StringUtil
+{}

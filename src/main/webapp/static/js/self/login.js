@@ -19,10 +19,6 @@ $(document).ready(function () {
             submitHandler: function (form) {
                 var pwd = $('#userPassword').val();
                 $('#userPassword').val(CryptoJS.AES.encrypt(pwd, '192847723'));
-                var a = CryptoJS.AES.encrypt(pwd, "192847723")
-                var b = CryptoJS.AES.decrypt(pwd, "192847723")
-                console.log(a);
-                console.log(b);
                 form.submit();
             }
         })
